@@ -17,7 +17,7 @@ export default function Table({ tableData, subject }: Props) {
         {tableData.map(({ head, content, period }) => (
           <li
             key={head}
-            className="flex flex-col lg:flex-row lg:items-center justify-center lg:justify-start pt-4 pb-5 lg:py-0 lg:h-16 border-t gap-0 lg:gap-4 lg:px-4"
+            className="flex flex-col lg:flex-row lg:items-center justify-center lg:justify-start pt-4 pb-5 lg:py-0 lg:h-16 border-t gap-0 lg:gap-4 px-4"
           >
             <h3 className="font-bold text-lg text-black/80">{head}</h3>
             <section className="text-black/50 lg:text-sm flex items-center flex-wrap">
