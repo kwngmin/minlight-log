@@ -1,5 +1,3 @@
-import { HtmlProps } from "next/dist/shared/lib/html-context";
-
 type Props = {
   tableData: {
     head: string;

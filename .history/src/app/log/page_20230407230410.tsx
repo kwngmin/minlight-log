@@ -9,6 +9,7 @@ const titleData = {
 
 export default async function LogPage() {
   const diaries = await getDiaryData();
+  console.log(diaries);
   return (
     <>
       <Title titleData={titleData} />

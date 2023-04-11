@@ -1,0 +1,10 @@
+import { readFile } from 'fs/promises'
+import path from 'path'
+
+export async function getDiaryData(): Promise(Diary[]) {
+    const filePath = path.join(process.cwd(), 'data', 'diary.json')
+    return readFile(filePath, "utf-8")
+    .then<diary[]>(JSON.parse)
+    .then(diaries) => DEV_MIDDLEWARE_MANIFEST.sort((a,b)=> (a.data > b.date ? -1: 1))
+    
+}
