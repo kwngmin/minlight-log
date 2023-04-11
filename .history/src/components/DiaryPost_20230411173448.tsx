@@ -9,12 +9,11 @@ type Props = {
 export default function DiaryPost({ diary }: Props) {
   const { title, content, date } = diary;
   const dateData = getDate(date);
-  register("ko", ko);
   return (
     <>
       <h2 className="text-2xl font-semibold text-black/80 mb-1">{title}</h2>
       <time className="text-black/50">
-        {dateData} ({format(date.toString(), "ko")})
+        {dateData}({format(date.toString(), "ko")})
       </time>
       <p className="text-black/80 mt-4 break-keep">{content}</p>
     </>
