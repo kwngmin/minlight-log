@@ -7,6 +7,9 @@ export type Diary = {
   date: Date;
   content: string;
 };
+type DateType = {
+  date: Date;
+};
 export const getDiaryData = cache(async () => {
   const filePath = path.join(process.cwd(), "data", "thoughts.json");
   return readFile(filePath, "utf-8")
@@ -23,8 +26,15 @@ export const getDiaryData = cache(async () => {
 export function getDate(date: Date) {
   const dateData = date.toString().split("-");
   const year = dateData[0];
-  const month = dateData[1].replace("0", "");
-  const day = dateData[2].split(" ")[0].replace("0", "");
-  const dateString = `${year}년 ${month}월 ${day}일`;
+  
+  `${dateData[0]}년 ${dateData[1].replace(
+    "0",
+    ""
+  )}월 ${dateData[2].split(' ').replace("0", "")}일`;
+  const month = dateData[0]}년 ${dateData[1].replace(
+    "0",
+    ""
+  )
+  const day = 
   return dateString;
 }

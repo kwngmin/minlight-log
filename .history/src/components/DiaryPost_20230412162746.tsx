@@ -16,12 +16,12 @@ export default function DiaryPost({ diary }: Props) {
       <time className="text-black/50">
         {dateData} ({format(date.toString(), "ko")})
       </time>
-      <div className="text-black/80 mt-4 break-keep">
-        {content?.split("\n").map((line, idx) => (
-          <p key={idx}>{line}</p>
+      <div>
+        {content?.split("\n").map((line) => (
+          <p>{line}</p>
         ))}
       </div>
-      {/* <p className="text-black/80 mt-4 break-keep">{content}</p> */}
+      <p className="text-black/80 mt-4 break-keep">{content}</p>
     </>
   );
 }

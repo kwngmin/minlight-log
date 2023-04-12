@@ -7,6 +7,9 @@ export type Diary = {
   date: Date;
   content: string;
 };
+type DateType = {
+  date: Date;
+};
 export const getDiaryData = cache(async () => {
   const filePath = path.join(process.cwd(), "data", "thoughts.json");
   return readFile(filePath, "utf-8")
