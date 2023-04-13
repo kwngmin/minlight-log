@@ -12,8 +12,8 @@ export default function DiaryPost({ diary }: Props) {
   register("ko", ko);
   return (
     <>
-      <h2 className="text-2xl font-semibold text-black/80">{title}</h2>
-      <time className="text-black/60 text-sm">
+      <h2 className="text-2xl font-semibold text-black/80 mb-1">{title}</h2>
+      <time className="text-black/50 text-sm">
         {dateData} ({format(date.toString(), "ko")})
       </time>
       <div className="text-black/80 mt-2 break-keep">

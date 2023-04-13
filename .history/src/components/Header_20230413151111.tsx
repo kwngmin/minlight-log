@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const navList = [
   { name: "Log", url: "/log" },
-  // { name: "Writing", url: "/log" },
+  { name: "Writing", url: "/log" },
 ];
 
 export default function Header() {

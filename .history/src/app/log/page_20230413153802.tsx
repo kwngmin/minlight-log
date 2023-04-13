@@ -3,8 +3,8 @@ import Title from "@/components/Title";
 import { getDiaryData } from "@/service/log";
 
 const titleData = {
-  title: `Things`,
-  description: `Record of thought, moments, feelings that I don't want to forget.`,
+  title: `Thoughts`,
+  description: `Record of thought or moments that I don't want to forget.`,
 };
 
 export default async function LogPage() {
