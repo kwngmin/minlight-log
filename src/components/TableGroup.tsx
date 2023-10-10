@@ -2,7 +2,7 @@ import Table from '@/components/Table';
 
 const careerData = [
   {
-    head: 'ITlog',
+    head: 'Itlog',
     content: 'Frontend Developer & UX/UI Designer',
     period: '2023.06 - Now',
   },
